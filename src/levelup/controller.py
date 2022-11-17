@@ -5,6 +5,7 @@ from levelup.character import Character
 DEFAULT_CHARACTER_NAME = "Character"
 ARBITRARY_INVALID_INITIALIZED_POSITION = (-1,-1)
 
+
 class Direction(Enum):
     NORTH = "n"
     SOUTH = "s"
@@ -16,6 +17,7 @@ class Direction(Enum):
 class GameStatus:
     running: bool = False
     character: Character = Character(DEFAULT_CHARACTER_NAME)
+    current_position: tuple = ARBITRARY_INVALID_INITIALIZED_POSITION
 
 
 class GameController:
@@ -31,3 +33,21 @@ class GameController:
 
     def move(self, direction: Direction) -> None:
         print(f"Moved {direction.name}")
+
+def set_character_position(self, xycoordinates: tuple) -> None:
+    print(f"Set character position state for tesing")
+    #TODO: IMPLEMENTS THIS
+
+def character_xposition_should_be(self, expected):
+    e_position_x = self.controller.status.current_position[0]
+    if e_position_x != expected:
+        raise AssertionError(
+            "%s != %s" % (e_position_x, expected)
+        )
+
+def character_yposition_should_be(self, expected):
+    e_position_y = self.controller.status.current_position[0]
+    if e_position_y != expected:
+        raise AssertionError(
+            "%s != %s" % (e_position_y, expected)
+        )
