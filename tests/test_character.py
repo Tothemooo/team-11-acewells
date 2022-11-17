@@ -12,6 +12,3 @@ class TestCharacter(TestCase):
         expected_value = ""
         actual_value = testobj.name
         self.assertNotEqual(actual_value, expected_value)
-
-    def test_EnterMap(self):
-        testobj 
