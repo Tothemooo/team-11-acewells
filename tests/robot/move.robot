@@ -25,4 +25,3 @@ Move character
     Character move count should be ${E_Move_Count}
 
     ***add pictures later***
-
