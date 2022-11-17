@@ -38,16 +38,3 @@ def set_character_position(self, xycoordinates: tuple) -> None:
     print(f"Set character position state for tesing")
     #TODO: IMPLEMENTS THIS
 
-def character_xposition_should_be(self, expected):
-    e_position_x = self.controller.status.current_position[0]
-    if e_position_x != expected:
-        raise AssertionError(
-            "%s != %s" % (e_position_x, expected)
-        )
-
-def character_yposition_should_be(self, expected):
-    e_position_y = self.controller.status.current_position[0]
-    if e_position_y != expected:
-        raise AssertionError(
-            "%s != %s" % (e_position_y, expected)
-        )

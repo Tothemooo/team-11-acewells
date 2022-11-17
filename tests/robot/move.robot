@@ -1,7 +1,7 @@
 ***Settings***
 Documentation   I want to move my character. If they attempt to move past a boundary, the move results in no change in position.
 Test Template   Move character
-Library         Move.library.py
+Library         MoveLibrary.py
 
 *** Test Cases ***	                Character	S_Position_X	S_Position_Y	S_Move_Count	Direction	E_Position_X	E_Position_Y	E_Move_Count
 Move east from initial position	    Fred	    5	            5	            0	            D	        6	            5	            1
@@ -15,14 +15,14 @@ Move west from (1, 1)	            Amy	        1	            1	            40	   
 *** Keywords ***
 Move character
     [Arguments]     ${Character}     ${S_Position_X}     ${S_Position_Y}     ${S_Move_Count}     ${Direction}        ${E_Position_X}     ${E_Position_Y}     ${E_Move_Count}
-    Initialize character name with ${Character}
-    Initialize character x positon with ${S_Position_X}
-    Initialize character y position with ${S_Position_Y}
-    Initialize move count with ${S_Move_Count}
-    Move in direction ${Direction}
-    Character x position should be ${E_Position_X}
-    Character y position should be ${E_Position_Y}
-    Character move count should be ${E_Move_Count}
+    Initialize character name with  ${Character}
+    Initialize character x position with    ${S_Position_X}
+    Initialize character y position with    ${S_Position_Y}
+    Initialize move count with  ${S_Move_Count}
+    Move in direction   ${Direction}
+    Character x position should be  ${E_Position_X}
+    Character y position should be  ${E_Position_Y}
+    Character move count should be  ${E_Move_Count}
 
     ***add pictures later***
 
