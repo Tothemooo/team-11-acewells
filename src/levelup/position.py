@@ -14,6 +14,8 @@ class Position():
         self.yCoordinates=default_y_position
         self.position=(self.xCoordinates,self.yCoordinates)
 
+    def to_str(self):
+        return "self.xCoordinates, self.yCoordinates"
  
     
     
