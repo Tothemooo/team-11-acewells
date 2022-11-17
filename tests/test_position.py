@@ -5,7 +5,7 @@ from levelup import position
 
 class TestPosition(TestCase):
     def test_init(self):
-        self.test_position = position.Position()
+        self.test_position = position.Position(1,1)
         self.assertEqual((1,1), self.test_position.position)
 
     
