@@ -8,7 +8,7 @@ class TestCharacter(TestCase):
     actual_value: str
 
     def test_initialization(self):
-        testobj = Character("")
+        testobj = Character("Sri")
         expected_value = ""
         actual_value = testobj.name
         self.assertNotEqual(actual_value, expected_value)
