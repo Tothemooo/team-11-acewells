@@ -1,7 +1,7 @@
 from enum import Enum
 from dataclasses import dataclass
 from levelup.character import Character
-from levelup import gamemap
+from levelup import map
 
 DEFAULT_CHARACTER_NAME = "Character"
 ARBITRARY_INVALID_INITIALIZED_POSITION = (-1,-1)
