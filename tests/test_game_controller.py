@@ -17,9 +17,13 @@ class TestGameController(TestCase):
         test_controller.create_character(expected_character_name)
         self.assertEqual(expected_character_name, test_controller.status.character.name)
 
-    def test_set_character_position(self):
+    def test_get_gamestatus(self):
         test_controller = GameController()
-        expected_character_position = (3,4)
-        test_controller.set_character_position(expected_character_position)
-        self.assertEqual(expected_character_position,test_controller.status.current_position)
+        self.assertIsNotNone(test_controller.status.getStatus());
+
+  #  def test_set_character_position(self):
+   #     test_controller = GameController()
+   #     expected_character_position = (3,4)
+   #     test_controller.set_character_position(expected_character_position)
+  #      self.assertEqual(expected_character_position,test_controller.status.current_position)
 
