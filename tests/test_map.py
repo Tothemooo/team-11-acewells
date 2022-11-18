@@ -1,4 +1,4 @@
-from levelup.map import Map
+from levelup.map import GameMap
 from unittest import TestCase
 from levelup.position import Position
 
@@ -6,7 +6,7 @@ from levelup.position import Position
 
 class TestMap(TestCase):
     def test_initialization(self):
-        testobj = Map()
+        testobj = GameMap()
         expected_starting_position = Position(0,0)
         self.assertEqual(testobj.startingPosition.to_str(), expected_starting_position.to_str())
 

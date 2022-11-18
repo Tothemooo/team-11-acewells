@@ -1,7 +1,6 @@
 from unittest import TestCase
 from levelup.controller import GameController, DEFAULT_CHARACTER_NAME
 
-
 class TestGameController(TestCase):
     def test_init(self):
         test_controller = GameController()

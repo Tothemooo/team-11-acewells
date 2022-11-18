@@ -1,13 +1,18 @@
-from dataclasses import dataclass
+from levelup.position import Position
+from levelup.map import GameMap
+
+DEFAULT_POSITION = Position(0, 0)
 
 
-@dataclass
 class Character:
     name: str
+    current_position: Position = DEFAULT_POSITION
 
-#    def __init__ (self, name):
-#        self.name = name
-#
-#    def getName():
-#        self.name = input("Please enter a name for your mighty warrior person")
-#        return self.name
+    def __init__(self, name: str):
+        self.name = name
+
+    def enter_map(self, game_map: GameMap):
+        pass
+
+    def move(self):
+        pass
